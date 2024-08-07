@@ -12,7 +12,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPOSITORY,
       path: DEPLOY_PATH,
-      'post-deploy': 'cd frontend && pwd && npm ci && npm install caniuse-lite && npm run build',
+      'post-deploy': 'cd frontend && pwd && npm install && npm install -i && npm install caniuse-lite && npm run build',
     },
   },
 };
